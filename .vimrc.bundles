@@ -74,17 +74,17 @@
 " Bundles {
 
     " Deps {
-        Bundle 'gmarik/vundle'
-        Bundle 'MarcWeber/vim-addon-mw-utils'
-        Bundle 'tomtom/tlib_vim'
+        Bundle 'git@github.com:gmarik/vundle'
+        Bundle 'git@github.com:MarcWeber/vim-addon-mw-utils'
+        Bundle 'git@github.com:tomtom/tlib_vim'
         if executable('ag')
-            Bundle 'mileszs/ack.vim'
+            Bundle 'git@github.com:mileszs/ack.vim'
             let g:ackprg = 'ag --nogroup --nocolor --column --smart-case'
         elseif executable('ack-grep')
             let g:ackprg="ack-grep -H --nocolor --nogroup --column"
-            Bundle 'mileszs/ack.vim'
+            Bundle 'git@github.com:mileszs/ack.vim'
         elseif executable('ack')
-            Bundle 'mileszs/ack.vim'
+            Bundle 'git@github.com:mileszs/ack.vim'
         endif
     " }
 
@@ -101,109 +101,109 @@
 
     " General {
         if count(g:spf13_bundle_groups, 'general')
-            Bundle 'scrooloose/nerdtree'
-            Bundle 'altercation/vim-colors-solarized'
-            Bundle 'spf13/vim-colors'
-            Bundle 'tpope/vim-surround'
-            Bundle 'tpope/vim-repeat'
-            Bundle 'rhysd/conflict-marker.vim'
-            Bundle 'jiangmiao/auto-pairs'
-            Bundle 'ctrlpvim/ctrlp.vim'
-            Bundle 'tacahiroy/ctrlp-funky'
-            Bundle 'terryma/vim-multiple-cursors'
-            Bundle 'vim-scripts/sessionman.vim'
+            Bundle 'git@github.com:scrooloose/nerdtree'
+            Bundle 'git@github.com:altercation/vim-colors-solarized'
+            Bundle 'git@github.com:spf13/vim-colors'
+            Bundle 'git@github.com:tpope/vim-surround'
+            Bundle 'git@github.com:tpope/vim-repeat'
+            Bundle 'git@github.com:rhysd/conflict-marker.vim'
+            Bundle 'git@github.com:jiangmiao/auto-pairs'
+            Bundle 'git@github.com:ctrlpvim/ctrlp.vim'
+            Bundle 'git@github.com:tacahiroy/ctrlp-funky'
+            Bundle 'git@github.com:terryma/vim-multiple-cursors'
+            Bundle 'git@github.com:vim-scripts/sessionman.vim'
             Bundle 'matchit.zip'
             if (has("python") || has("python3")) && exists('g:spf13_use_powerline') && !exists('g:spf13_use_old_powerline')
-                Bundle 'Lokaltog/powerline', {'rtp':'/powerline/bindings/vim'}
+                Bundle 'git@github.com:Lokaltog/powerline', {'rtp':'/powerline/bindings/vim'}
             elseif exists('g:spf13_use_powerline') && exists('g:spf13_use_old_powerline')
-                Bundle 'Lokaltog/vim-powerline'
+                Bundle 'git@github.com:Lokaltog/vim-powerline'
             else
-                Bundle 'vim-airline/vim-airline'
-                Bundle 'vim-airline/vim-airline-themes'
+                Bundle 'git@github.com:vim-airline/vim-airline'
+                Bundle 'git@github.com:vim-airline/vim-airline-themes'
             endif
-            Bundle 'powerline/fonts'
-            Bundle 'bling/vim-bufferline'
-            Bundle 'easymotion/vim-easymotion'
-            Bundle 'jistr/vim-nerdtree-tabs'
-            Bundle 'flazz/vim-colorschemes'
-            Bundle 'mbbill/undotree'
-            Bundle 'nathanaelkane/vim-indent-guides'
+            Bundle 'git@github.com:powerline/fonts'
+            Bundle 'git@github.com:bling/vim-bufferline'
+            Bundle 'git@github.com:easymotion/vim-easymotion'
+            Bundle 'git@github.com:jistr/vim-nerdtree-tabs'
+            Bundle 'git@github.com:flazz/vim-colorschemes'
+            Bundle 'git@github.com:mbbill/undotree'
+            Bundle 'git@github.com:nathanaelkane/vim-indent-guides'
             if !exists('g:spf13_no_views')
-                Bundle 'vim-scripts/restore_view.vim'
+                Bundle 'git@github.com:vim-scripts/restore_view.vim'
             endif
-            Bundle 'mhinz/vim-signify'
-            Bundle 'tpope/vim-abolish.git'
-            Bundle 'osyo-manga/vim-over'
-            Bundle 'kana/vim-textobj-user'
-            Bundle 'kana/vim-textobj-indent'
-            Bundle 'gcmt/wildfire.vim'
+            Bundle 'git@github.com:mhinz/vim-signify'
+            Bundle 'git@github.com:tpope/vim-abolish.git'
+            Bundle 'git@github.com:osyo-manga/vim-over'
+            Bundle 'git@github.com:kana/vim-textobj-user'
+            Bundle 'git@github.com:kana/vim-textobj-indent'
+            Bundle 'git@github.com:gcmt/wildfire.vim'
         endif
     " }
 
     " Writing {
         if count(g:spf13_bundle_groups, 'writing')
-            Bundle 'reedes/vim-litecorrect'
-            Bundle 'reedes/vim-textobj-sentence'
-            Bundle 'reedes/vim-textobj-quote'
-            Bundle 'reedes/vim-wordy'
+            Bundle 'git@github.com:reedes/vim-litecorrect'
+            Bundle 'git@github.com:reedes/vim-textobj-sentence'
+            Bundle 'git@github.com:reedes/vim-textobj-quote'
+            Bundle 'git@github.com:reedes/vim-wordy'
         endif
     " }
 
     " General Programming {
         if count(g:spf13_bundle_groups, 'programming')
             " Pick one of the checksyntax, jslint, or syntastic
-            Bundle 'scrooloose/syntastic'
-            Bundle 'tpope/vim-fugitive'
-            Bundle 'mattn/webapi-vim'
-            Bundle 'mattn/gist-vim'
-            Bundle 'scrooloose/nerdcommenter'
-            Bundle 'tpope/vim-commentary'
-            Bundle 'godlygeek/tabular'
-            Bundle 'luochen1990/rainbow'
+            Bundle 'git@github.com:scrooloose/syntastic'
+            Bundle 'git@github.com:tpope/vim-fugitive'
+            Bundle 'git@github.com:mattn/webapi-vim'
+            Bundle 'git@github.com:mattn/gist-vim'
+            Bundle 'git@github.com:scrooloose/nerdcommenter'
+            Bundle 'git@github.com:tpope/vim-commentary'
+            Bundle 'git@github.com:godlygeek/tabular'
+            Bundle 'git@github.com:luochen1990/rainbow'
             if executable('ctags')
-                Bundle 'majutsushi/tagbar'
+                Bundle 'git@github.com:majutsushi/tagbar'
             endif
         endif
     " }
 
     " Snippets & AutoComplete {
         if count(g:spf13_bundle_groups, 'snipmate')
-            Bundle 'garbas/vim-snipmate'
-            Bundle 'honza/vim-snippets'
+            Bundle 'git@github.com:garbas/vim-snipmate'
+            Bundle 'git@github.com:honza/vim-snippets'
             " Source support_function.vim to support vim-snippets.
             if filereadable(expand("~/.vim/bundle/vim-snippets/snippets/support_functions.vim"))
                 source ~/.vim/bundle/vim-snippets/snippets/support_functions.vim
             endif
         elseif count(g:spf13_bundle_groups, 'youcompleteme')
-            Bundle 'Valloric/YouCompleteMe'
-            Bundle 'SirVer/ultisnips'
-            Bundle 'honza/vim-snippets'
+            Bundle 'git@github.com:Valloric/YouCompleteMe'
+            Bundle 'git@github.com:SirVer/ultisnips'
+            Bundle 'git@github.com:honza/vim-snippets'
         elseif count(g:spf13_bundle_groups, 'neocomplcache')
-            Bundle 'Shougo/neocomplcache'
-            Bundle 'Shougo/neosnippet'
-            Bundle 'Shougo/neosnippet-snippets'
-            Bundle 'honza/vim-snippets'
+            Bundle 'git@github.com:Shougo/neocomplcache'
+            Bundle 'git@github.com:Shougo/neosnippet'
+            Bundle 'git@github.com:Shougo/neosnippet-snippets'
+            Bundle 'git@github.com:honza/vim-snippets'
         elseif count(g:spf13_bundle_groups, 'neocomplete')
-            Bundle 'Shougo/neocomplete.vim.git'
-            Bundle 'Shougo/neosnippet'
-            Bundle 'Shougo/neosnippet-snippets'
-            Bundle 'honza/vim-snippets'
+            Bundle 'git@github.com:Shougo/neocomplete.vim.git'
+            Bundle 'git@github.com:Shougo/neosnippet'
+            Bundle 'git@github.com:Shougo/neosnippet-snippets'
+            Bundle 'git@github.com:honza/vim-snippets'
         endif
     " }
 
     " PHP {
         if count(g:spf13_bundle_groups, 'php')
-            Bundle 'spf13/PIV'
-            Bundle 'arnaud-lb/vim-php-namespace'
-            Bundle 'beyondwords/vim-twig'
+            Bundle 'git@github.com:spf13/PIV'
+            Bundle 'git@github.com:arnaud-lb/vim-php-namespace'
+            Bundle 'git@github.com:beyondwords/vim-twig'
         endif
     " }
 
     " Python {
         if count(g:spf13_bundle_groups, 'python')
             " Pick either python-mode or pyflakes & pydoc
-            Bundle 'klen/python-mode'
-            Bundle 'yssource/python.vim'
+            Bundle 'git@github.com:klen/python-mode'
+            Bundle 'git@github.com:yssource/python.vim'
             Bundle 'python_match.vim'
             Bundle 'pythoncomplete'
         endif
@@ -211,50 +211,50 @@
 
     " Javascript {
         if count(g:spf13_bundle_groups, 'javascript')
-            Bundle 'elzr/vim-json'
-            Bundle 'groenewege/vim-less'
-            Bundle 'pangloss/vim-javascript'
-            Bundle 'briancollins/vim-jst'
-            Bundle 'kchmck/vim-coffee-script'
+            Bundle 'git@github.com:elzr/vim-json'
+            Bundle 'git@github.com:groenewege/vim-less'
+            Bundle 'git@github.com:pangloss/vim-javascript'
+            Bundle 'git@github.com:briancollins/vim-jst'
+            Bundle 'git@github.com:kchmck/vim-coffee-script'
         endif
     " }
 
     " Scala {
         if count(g:spf13_bundle_groups, 'scala')
-            Bundle 'derekwyatt/vim-scala'
-            Bundle 'derekwyatt/vim-sbt'
-            Bundle 'xptemplate'
+            Bundle 'git@github.com:derekwyatt/vim-scala'
+            Bundle 'git@github.com:derekwyatt/vim-sbt'
+            Bundle 'git@github.com:xptemplate'
         endif
     " }
 
     " Haskell {
         if count(g:spf13_bundle_groups, 'haskell')
-            Bundle 'travitch/hasksyn'
-            Bundle 'dag/vim2hs'
-            Bundle 'Twinside/vim-haskellConceal'
-            Bundle 'Twinside/vim-haskellFold'
-            Bundle 'lukerandall/haskellmode-vim'
-            Bundle 'eagletmt/neco-ghc'
-            Bundle 'eagletmt/ghcmod-vim'
-            Bundle 'Shougo/vimproc.vim'
-            Bundle 'adinapoli/cumino'
-            Bundle 'bitc/vim-hdevtools'
+            Bundle 'git@github.com:travitch/hasksyn'
+            Bundle 'git@github.com:dag/vim2hs'
+            Bundle 'git@github.com:Twinside/vim-haskellConceal'
+            Bundle 'git@github.com:Twinside/vim-haskellFold'
+            Bundle 'git@github.com:lukerandall/haskellmode-vim'
+            Bundle 'git@github.com:eagletmt/neco-ghc'
+            Bundle 'git@github.com:eagletmt/ghcmod-vim'
+            Bundle 'git@github.com:Shougo/vimproc.vim'
+            Bundle 'git@github.com:adinapoli/cumino'
+            Bundle 'git@github.com:bitc/vim-hdevtools'
         endif
     " }
 
     " HTML {
         if count(g:spf13_bundle_groups, 'html')
-            Bundle 'amirh/HTML-AutoCloseTag'
-            Bundle 'hail2u/vim-css3-syntax'
-            Bundle 'gorodinskiy/vim-coloresque'
-            Bundle 'tpope/vim-haml'
-            Bundle 'mattn/emmet-vim'
+            Bundle 'git@github.com:amirh/HTML-AutoCloseTag'
+            Bundle 'git@github.com:hail2u/vim-css3-syntax'
+            Bundle 'git@github.com:gorodinskiy/vim-coloresque'
+            Bundle 'git@github.com:tpope/vim-haml'
+            Bundle 'git@github.com:mattn/emmet-vim'
         endif
     " }
 
     " Ruby {
         if count(g:spf13_bundle_groups, 'ruby')
-            Bundle 'tpope/vim-rails'
+            Bundle 'git@github.com:tpope/vim-rails'
             let g:rubycomplete_buffer_loading = 1
             "let g:rubycomplete_classes_in_global = 1
             "let g:rubycomplete_rails = 1
@@ -263,34 +263,34 @@
 
     " Puppet {
         if count(g:spf13_bundle_groups, 'puppet')
-            Bundle 'rodjek/vim-puppet'
+            Bundle 'git@github.com:rodjek/vim-puppet'
         endif
     " }
 
     " Go Lang {
         if count(g:spf13_bundle_groups, 'go')
-            "Bundle 'Blackrush/vim-gocode'
-            Bundle 'fatih/vim-go'
+            "Bundle 'git@github.com:Blackrush/vim-gocode'
+            Bundle 'git@github.com:fatih/vim-go'
         endif
     " }
 
     " Elixir {
         if count(g:spf13_bundle_groups, 'elixir')
-            Bundle 'elixir-lang/vim-elixir'
-            Bundle 'carlosgaldino/elixir-snippets'
-            Bundle 'mattreduce/vim-mix'
+            Bundle 'git@github.com:elixir-lang/vim-elixir'
+            Bundle 'git@github.com:carlosgaldino/elixir-snippets'
+            Bundle 'git@github.com:mattreduce/vim-mix'
         endif
     " }
 
     " Misc {
         if count(g:spf13_bundle_groups, 'misc')
-            Bundle 'rust-lang/rust.vim'
-            Bundle 'tpope/vim-markdown'
-            Bundle 'spf13/vim-preview'
-            Bundle 'tpope/vim-cucumber'
-            Bundle 'cespare/vim-toml'
-            Bundle 'quentindecock/vim-cucumber-align-pipes'
-            Bundle 'saltstack/salt-vim'
+            Bundle 'git@github.com:rust-lang/rust.vim'
+            Bundle 'git@github.com:tpope/vim-markdown'
+            Bundle 'git@github.com:spf13/vim-preview'
+            Bundle 'git@github.com:tpope/vim-cucumber'
+            Bundle 'git@github.com:cespare/vim-toml'
+            Bundle 'git@github.com:quentindecock/vim-cucumber-align-pipes'
+            Bundle 'git@github.com:saltstack/salt-vim'
         endif
     " }
 

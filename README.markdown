@@ -36,6 +36,11 @@ The easiest way to install spf13-vim is to use our [automatic installer](https:/
     curl https://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh
 ```
 
+ssh install
+```bash
+REPO_URI="git@github.com:kianfang/spf13-vim.git" VUNDLE_URI="git@github.com:gmarik/vundle.git" sh spf13-vim.sh
+```
+
 If you have a bash-compatible shell you can run the script directly:
 ```bash
 
